@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jorge's WebApp</title>
+  <style>
+    body {
+      color: #000000;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      -moz-transition-property: text-shadow;
+      -moz-transition-duration: 4s;
+      -webkit-transition-property: text-shadow;
+      -webkit-transition-duration: 4s;
+      text-shadow: none;
+    }
+
+    body.blurry {
+      -moz-transition-property: text-shadow;
+      -moz-transition-duration: 4s;
+      -webkit-transition-property: text-shadow;
+      -webkit-transition-duration: 4s;
+      text-shadow: #fff 0px 0px 25px;
+    }
+
+    a {
+      color: #55aaff;
+    }
+
+    .textColumn {
+      padding: 2em;
+    }
+
+    .textColumn {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+
+      text-align: right;
+      padding-top: 11em;
+      background-color: rgba(251, 251, 254, 0.705);
+
+    }
+
+    .textColumn p {
+      width: 75%;
+      float: right;
+    }
+
+
+    h1 {
+      color: #000000;
+      font-size: 500%;
+      font-weight: normal;
+      margin-bottom: 0em;
+    }
+
+    h2 {
+      font-size: 200%;
+      font-weight: normal;
+      margin-bottom: 0em;
+    }
+
+    ul {
+      padding-left: 1em;
+      margin: 0px;
+    }
+
+    li {
+      margin: 1em 0em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="textColumn">
+    <h1>Congratulations</h1>
+    <p>Your first AWS Elastic Beanstalk Node.js application is now running on your own dedicated environment in the AWS
+      Cloud</p>
+    <p>This environment is launched with Elastic Beanstalk Node.js Platform</p>
+  </div>
+  <script>
+    window.intercomSettings = {
+      api_base: "https://api-iam.intercom.io",
+      app_id: "cmdvxvv6",
+      //name: user.name, // Full name
+      user_id: user.id, // a UUID for your user
+      //email: user.email, // the email for your user
+      //created_at: user.createdAt // Signup date as a Unix timestamp
+    };
+  </script>
+
+  <script>
+    // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/cmdvxvv6'
+    (function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', w.intercomSettings); } else { var d = document; var i = function () { i.c(arguments); }; i.q = []; i.c = function (args) { i.q.push(args); }; w.Intercom = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/cmdvxvv6'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (document.readyState === 'complete') { l(); } else if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })();
+  </script>
+
+</body>
+
+</html>
